@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta name="description" content="Get current weather, hourly forecast, daily forecast, and 3-hourly forecast 5 days for your city. Show historical weather data that was searched for any coordinate. Interactive map, shows tempature, Show Humidity, Show wind around your location.">
+    <meta name="keywords" content="weather, city, forecast"> -->
+    <title>Your Weather forcast!</title> 
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+     <!-- added link -->
+    <link rel="stylesheet" type="text/css" herf="./assets/css/style.css"/>
+    <!-- realized the link didnt have "./assets/css/style.css" just.style..css but still buggin -->
+</head>
+<body>
+
+  <header class="w3-container w3-teal">
+    <h1>Header</h1>
+  </header>
+  
+  <img src="" alt="Sunny park" style="width:100%">
+  
+  <body>
+    <div class="wrapper">
+        <!-- heading added-->
+      <header>
+        <h1>Weather Forecast</h1>
+      </header>
+      <!-- navagation addded -->
+      <nav>
+        <ul>
+            <li><a herf="#">Home</a></li>
+            <li><a herf="#">About</a></li>
+            <li><a herf="#">Contact</a></li>
+        </ul>
+    </nav>
+      <div class="card">
+        <div class="card-header">
+          <h2>Type in your city or zip code for weather results</h2>
+        </div>
+        <div class="card-body">
+            <!-- search bar added -->
+          <input
+            type="text"
+            class="form-control"
+            id="city"
+            placeholder="search city/zip"
+            aria-label="city"
+          ></input>
+          <!-- format example added -->
+          <small>Format example: Everett, Washington</small><br>/98204</br>
+        </div>
+        <div class="card-footer">
+            <!-- get weather button added -->
+          <button id="btnGet" type="button" btn>Get Weather</button>
+        </div>
+      </div>
+    </div>
+    <!-- weather results -->
+  <div class="w3-row-padding w3-section">
+  
+    <div class="w3-half">
+      <div class="w3-card">
+        <div class="w3-container">
+          <div class="card-body">
+            <h3 class="card-title">Current</h3>
+            <p class="card-text">Date</p>
+            <p class="card-text">time</p>
+            <p class="card-text">Current weather condition</p>
+            <p class="card-text">tempature</p>
+            <p class="card-text">Humidty</p>
+            <p class="card-text">Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- so what i had wanted was to put this on the left side and then the days of the week etc spreadd across the middle but why my css is not working -->
+    <div class="w3-half">
+      <div class="w3-card">
+        <!-- icon would be shown here -->
+        <img src="" alt="current weather icon here" style="width:100%">
+        <div class="w3-container">
+          <div class="card-body">
+            <h3 class="card-title">Monday</h3>
+             <!-- Javascript would show accrate and correct date, time, weather condition, temp, humidty, and wind thru the use of api  -->
+            <p class="card-text">Date</p>
+            <p class="card-text">time</p>
+            <p class="card-text">Current weather condition</p>
+            <p class="card-text">tempature</p>
+            <p class="card-text">Humidty</p>
+            <p class="card-text">Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-card">
+        <!-- icon would be shown here -->
+        <img src="" alt="current weather icon here" style="width:100%">
+        <!--<p>Unicode:</p>
+            <i style='font-size:24px' class='fas'>&#xf0e7;</i>  
+          not the correct way to add the icon tho--> 
+        <div class="w3-container">
+          <div class="card-body">
+            <h3 class="card-title">Tuesday</h3>
+             <!-- Javascript would show accrate and correct date, time, weather condition, temp, humidty, and wind thru the use of api -->
+            <p class="card-text">Date</p>
+            <p class="card-text">time</p>
+            <p class="card-text">Current weather condition</p> 
+            <p class="card-text">tempature</p>
+            <p class="card-text">Humidty</p>
+            <p class="card-text">Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-card">
+        <!-- icon would be shown here -->
+        <img src="" alt="current weather icon here" style="width:100%">
+        <div class="w3-container">
+          <div class="card-body">
+            <h3 class="card-title">Wednsday</h3>
+             <!-- Javascript would show accrate and correct date, time, weather condition, temp, humidty, and wind thru the use of api  -->
+            <p class="card-text">Date</p>
+            <p class="card-text">time</p>
+            <p class="card-text">Current weather condition</p>
+            <p class="card-text">tempature</p>
+            <p class="card-text">Humidty</p>
+            <p class="card-text">Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-card">
+        <!-- icon would be shown here -->
+        <img src="" alt="current weather icon here" style="width:100%">
+        <div class="w3-container">
+          <div class="card-body">
+            <h3 class="card-title">Thursday</h3>
+             <!-- Javascript would show accrate and correct date, time, weather condition, temp, humidty, and wind thru the use of api  -->
+            <p class="card-text">Date</p>
+            <p class="card-text">time</p>
+            <p class="card-text">Current weather condition</p>
+            <p class="card-text">tempature</p>
+            <p class="card-text">Humidty</p>
+            <p class="card-text">Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-card">
+        <!-- icon would be shown here -->
+        <img src="" alt="current weather icon here" style="width:100%">
+        <div class="w3-container">
+          <div class="card-body">
+            <h3 class="card-title">Friday</h3>
+            <!-- Javascript would show accrate and correct date, time, weather condition, temp, humidty, and wind thru the use of api -->
+            <p class="card-text">Date</p>
+            <p class="card-text">time</p>
+            <p class="card-text">Current weather condition</p>
+            <p class="card-text">tempature</p>
+            <p class="card-text">Humidty</p>
+            <p class="card-text">Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- linking javascript code -->
+    <script src="script.js"></script>
+  </body>
+</html>

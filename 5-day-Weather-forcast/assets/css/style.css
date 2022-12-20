@@ -1,0 +1,94 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* css still needs alot of work */
+html {
+     scroll-behavior: smooth;
+}
+    
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+}
+.card {
+    background-color: #ef72f6;
+    border-radius: 50px;
+    color: #6f707d;
+    font-family: 'Marcellus', serif;
+
+}
+/* header */
+
+header {
+    background-color: rgb(194, 135, 250);
+    font-family: century;
+    font-size: 4rem;
+    text-align: center;
+    color:rgb(198, 137, 255);
+    padding: 20px;
+}
+
+header h1 {
+    font-family: century;
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+/* navagation bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    position: sticky;
+    box-shadow: 0 2px 10px white;
+}
+
+.navbar ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    justify-content: space-between;
+    transition: all.5s ease;
+    margin: 0 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: aliceblue;
+    color: beige;
+    box-shadow: 0 0 10px pink;
+    border-radius: 20px;
+}
+
+/* buttons */
+.btn {
+    font-family: century;
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 10px white;
+    font-weight: bold;
+}
